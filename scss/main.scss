@@ -1,0 +1,247 @@
+@import 'config';
+@import 'home';
+@import 'services';
+@import 'portfolio';
+@import 'contact';
+@import 'menu-bar';
+@import 'loader';
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* a {
+    text-decoration: none;
+  
+}
+
+body {
+font-weight: 300;
+color: $color-dark;
+line-height: 1.7;
+overflow-x: hidden;
+text-decoration: none;
+position: relative;
+
+
+    .navbar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    width: 100%;
+    top: 0;
+    height: 5rem;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+      padding: 2rem 5vw;
+   
+      &.scroll {
+            background: $color-black;
+
+            li a {
+               @include li;
+               color: $color-light;
+            }
+      }
+      .menu-icon {
+        display: none;
+       }
+    li {
+       @include li;
+       font-size: .8rem;
+    }
+    .navbar-left {
+        a {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    a {
+        color: $color-black;
+        text-decoration: none;
+        text-transform: uppercase;
+         
+    }
+
+    .navbar-right {
+        display: flex;
+        justify-content: space-around;
+        gap: 5vw;
+
+        a:hover {
+             color: $color-primary;
+        
+        }
+        .download-cv {
+            padding: 1rem  .5rem;
+            background: $color-primary;
+            color: $color-white;
+            border: 1px solid $color-primary;
+            @include transition-ease;
+            &:hover {
+                color: $color-primary;
+                background: $color-white;
+                @include transition-ease;
+
+                
+           }
+        }
+
+    }
+
+}
+
+
+//==============================MEDIA QUARIES [TABLET]===============================================
+@media screen and (max-width : 1024px ){
+
+  .navbar-container {
+    background: $color-black;
+    gap: 1vw;
+
+    li a {
+       @include li;
+       color: $color-light;
+    }
+    .navbar-left {
+        a {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    a {
+        color: $color-black;
+        text-decoration: none;
+        text-transform: uppercase;
+         
+    }
+
+    .navbar-right {
+        display: flex;
+        justify-content: space-around;
+        gap: 5vw;
+
+        // a:hover {
+        //      color: $color-primary;
+        
+        // }
+       
+
+    }
+
+}
+    
+  }
+  }
+
+//   * ==================================MOBILE MENU BAR================================ */
+
+@media screen  and (max-width: 680px){
+    .container {
+        width: $container-width-sm;
+    }
+    
+    body {
+           
+    .navbar-container {
+
+   
+      .menu-icon {
+        display: flex;
+       }
+    li {
+       @include li;
+       font-size: .8rem;
+    }
+   
+   
+
+    .navbar-right {
+        display: none;
+      
+
+        .download-cv {
+            // @include home-btn;
+            padding: 0rem  0em;
+            border: 0px solid $color-primary;
+        }
+
+    }
+
+            // .menu-icon {
+            //   display: flex;
+            //   flex-direction: column;
+            //       gap: 8px;
+            //       cursor: pointer;
+            //       @include transition-ease;
+
+            //  & span {
+            //     display: flex;
+            //     flex-direction: row;
+            //     background: $color-white;
+            //     height: 2px;
+            //     font-weight: 100;
+
+            //     &:nth-child(1) {
+            //         width: 2rem;
+            //     }
+
+            //     &:nth-child(2) {
+            //         width: 1.5rem;
+            //     }
+
+            //     &:nth-child(3) {
+            //         width: 1rem;
+            //     }
+            //  }
+          
+            //    }
+
+
+            //    .menu-icon.active {
+            //     display: flex;
+            //     flex-direction: column;
+            //         gap: 8px;
+            //         cursor: pointer;
+            //         @include transition-ease;
+  
+            //    & span {
+            //       display: flex;
+            //       flex-direction: row;
+            //       background: $color-white;
+            //       height: 2px;
+            //       font-weight: 100;
+  
+            //       &:nth-child(1) {
+            //           width: 2rem;
+            //           transform: rotate(225deg) translate(-.5rem, -.9rem);
+            //           @include transition-ease;
+
+            //       }
+  
+            //       &:nth-child(2) {
+            //           width: 0rem;
+            //       }
+  
+            //       &:nth-child(3) {
+            //           width: 3rem;
+            //           transform: rotate(135deg) translate(.5rem, .9rem);
+            //           @include transition-ease;
+
+            //       }
+            //    }
+            
+            //      }
+               
+           
+
+
+
+        }
+        }
+        
+
+    }

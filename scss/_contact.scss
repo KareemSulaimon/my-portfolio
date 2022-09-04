@@ -1,0 +1,140 @@
+section#contact {
+    display: flex;
+    background: $color-primary;
+    flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0;
+
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        color: $color-white;
+       align-self: flex-start;
+      
+        h2 {
+            font-size: 1.5rem;
+            color: $color-white;
+
+        }
+        .contact_socials {
+            display: flex;
+            flex-direction: row;
+            @include socials;
+            margin-top: 2rem;
+            align-self: flex-start;
+            gap: 5vw;
+
+            & li a {
+                color: $color-white;
+              
+                &:hover {
+                  color: $color-black;
+                  @include transition-ease;
+                }
+        }
+          
+        }
+    }
+
+     form  {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 4rem;
+        text-align: start;
+       
+       
+         
+        input {
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            height: 2rem;
+            padding: 20px;
+        }
+
+        textarea {
+            display: flex;
+            width: 40vw;
+            height: 10rem;
+            justify-content: center;
+          padding: 20px;
+        }
+           
+        }
+button {
+    @include black-home-btns;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    
+}
+    
+
+//  +++++++++++++++++++++++++++(MOBILE) ++++++++++++++++++++++++++++++++++++++
+@media screen and (max-width : 680px){
+
+    section#contact {
+        display: flex;
+        background: $color-primary;
+        flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 5% 0;
+    
+    
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            color: $color-white;
+            text-align: center;
+           align-self: center;
+            h2 {
+                font-size: 1.5rem;
+                color: $color-white;
+    
+            }
+            .contact_socials {
+                margin-top: 2rem;
+                align-self: center;
+               
+            }
+        }
+    
+         form  {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-top: 4rem;
+            text-align: start;
+           
+           
+             
+            input {
+                display: flex;
+                flex-direction: column;
+                width: 80vw;
+                height: 2rem;
+                padding: 20px;
+            }
+    
+            textarea {
+                display: flex;
+                width: 80vw;
+                height: 10rem;
+                justify-content: center;
+              padding: 20px;
+            }
+               
+            }
+   
+    }
+        
+}

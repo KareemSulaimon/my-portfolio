@@ -1,0 +1,171 @@
+//   * ==================================MOBILE MENU BAR================================ */
+
+@media screen  and (max-width: 680px){
+    .container {
+        width: $container-width-sm;
+    }
+    
+    body {
+           
+    .navbar-container {
+     
+    .navbar-right.active {
+        display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    right: 0;
+    top: 5rem;
+    z-index: 99;
+    background: $color-primary;
+    padding: 5rem 0;
+    width: 15rem;
+    @include transition-ease;
+   
+    .btn {
+        padding: 1rem 3rem;
+    }
+
+& li {
+    display: flex;
+    flex-direction: column;
+   padding: 1rem 5rem;
+    animation: flipNavItem 200ms ease forwards;
+    transform-origin: top;
+    text-align: center;
+    align-items: center;
+    place-self: center;
+
+    
+    &:hover  {
+        background: $color-white;
+        
+      }
+ & a {
+    color: $color-light;
+}
+&:hover a {
+    color: $color-black;
+    background: $color-white;
+}
+
+
+&:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+&:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+&:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+&:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+}
+@keyframes flipNavItem {
+    from {
+transform: rotateX(90deg);
+opacity: 0;
+    }
+     to {
+        transform: rotateX(0deg);
+opacity: 1;
+     }
+} 
+
+
+    }
+            .menu-icon {
+              display: flex;
+              flex-direction: column;
+                  gap: 8px;
+                  cursor: pointer;
+                  @include transition-ease;
+
+             & span {
+                display: flex;
+                flex-direction: row;
+                background: $color-white;
+                height: 2px;
+                font-weight: 100;
+
+                &:nth-child(1) {
+                    width: 2rem;
+                }
+
+                &:nth-child(2) {
+                    width: 1.5rem;
+                }
+
+                &:nth-child(3) {
+                    width: 1rem;
+
+                   
+                }
+             }
+             &:hover {
+
+              @include transition-ease;
+                & span {
+                   
+                    &:nth-child(1) {
+                        width: 2.5rem;
+                    }
+    
+                    &:nth-child(2) {
+                        width: 2rem;
+    
+                    }
+                    
+    
+                    &:nth-child(3) {
+                        width: 1.5rem;
+    
+                       
+                    }
+                 }
+            }
+          
+               }
+               .menu-icon.active {
+                    cursor: pointer;
+                    @include transition-ease;
+  
+               & span {
+                  display: flex;
+                  flex-direction: row;
+                  background: $color-white;
+                  height: 2px;
+                  font-weight: 100;
+  
+                  &:nth-child(1) {
+                      width: 2rem;
+                      transform: rotate(225deg) translate(-.5rem, -.9rem);
+                      @include transition-ease;
+
+                  }
+  
+                  &:nth-child(2) {
+                      width: 0rem;
+                  }
+  
+                  &:nth-child(3) {
+                      width: 3rem;
+                      transform: rotate(135deg) translate(.5rem, .9rem);
+                      @include transition-ease;
+
+                  }
+               }
+             
+                 }
+
+        }
+        }
+        
+
+    }

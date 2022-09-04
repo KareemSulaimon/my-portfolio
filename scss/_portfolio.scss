@@ -1,0 +1,158 @@
+section#portfolio {
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ background: $color-light;
+ padding: 5rem 5vw;
+ @include media-xl;
+
+.portfolio-intro {
+  display: flex;
+flex-direction: row; 
+ justify-content: space-around;
+  gap: 5vw;
+  margin-bottom: 5vw;
+
+
+.portfolio-paragraph {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+
+p {
+   margin-top: .5rem;
+
+}
+
+    }
+}
+
+.portfolio-projects {
+  display: grid;
+grid-template-columns: repeat(2, 44vw);
+justify-content: center;
+gap: 2rem;
+
+.project-description{
+    display: inline;
+  }
+.portfolio-project {
+display: flex;
+flex-direction: column;
+margin-bottom: 5rem;
+
+  .project-img {
+    display: block;
+    border: 1rem solid $color-white;
+    height: 20rem;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    transition: all 400ms ease;
+    box-shadow: 0 0 1.6rem $color-primary-variant;
+    position: relative;
+    
+    &:hover {
+      box-shadow: none;
+    }
+    & img {
+      transform: 0;
+      transition: all 5s ease;
+      width: 42vw;
+
+      //  It is (42vw) because grid-template-columns(44vw) and
+   //  the gap( 2rem ) and the border 1rem left and right (1rem + 1rem )
+
+      &:hover  {
+        transform: translateY(calc(-100% + 18rem));
+       
+      }
+    }
+  }
+}
+}
+.portfolio-btns  a {
+@include black-home-btns;
+
+}
+.portfolio-btns .purple  {
+  background: $color-primary;
+  margin-left: 2rem;
+}
+}
+
+
+// ===================================MEDIA SCREEN(TABLET)=========================================
+
+@media screen and (max-width : 1024px){
+  section#portfolio {
+   @include media-md;
+  
+  }
+}
+
+
+// ===================================MEDIA SCREEN(MOBILE)=========================================
+
+@media screen and (max-width : 680px){
+  section#portfolio {
+   @include media-sm;
+  
+  .portfolio-intro {
+  
+  flex-direction: column; 
+  }
+  
+  .portfolio-projects {
+    display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 2rem;
+  
+  
+  .portfolio-project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  
+    .project-img {
+      display: block;
+      border: 1rem solid $color-white;
+      height: 20rem;
+      overflow: hidden;
+      margin: 1.5rem 0;
+      transition: all 400ms ease;
+      box-shadow: 0 0 1.6rem $color-primary-variant;
+      position: relative;
+      
+      &:hover {
+        box-shadow: none;
+      }
+      & img {
+        transform: 0;
+        transition: all 5s ease;
+        width: calc(100vw - 5rem);
+  
+        //  It is (42vw) because grid-template-columns(44vw) and
+     //  the gap( 2rem ) and the border 1rem left and right (1rem + 1rem )
+  
+        &:hover  {
+          transform: translateY(calc(-100% + 18rem));
+         
+        }
+      }
+    }
+  }
+  }
+  .portfolio-btns  a {
+  @include black-home-btns;
+  
+  }
+  .portfolio-btns .purple  {
+    background: $color-primary;
+    margin-left: 2rem;
+  }
+  }
+  
+  }
+  

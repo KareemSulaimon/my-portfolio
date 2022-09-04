@@ -1,0 +1,27 @@
+#loader {
+    position: fixed;
+   background: $color-primary url(/dist/images/single-element-pong-loader.gif) no-repeat center center/cover;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+}
+    
+
+
+
+
+    @keyframes animatebottom {
+        from {
+            bottom:-100px;
+            opacity: 0;
+        }
+        to {
+            bottom: 0px;
+            opacity: 1;
+        }
+        
+    }
+    #myPage {
+        display: none;
+    }
+

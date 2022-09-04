@@ -1,0 +1,138 @@
+section#services {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2vw;
+    justify-content: center;
+   margin: 8rem 0rem;
+@include media-xl;
+   
+
+.services-left{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+background: $color-primary;
+color: $color-light;
+ width: 25%;
+ height: 100%;
+ justify-content: space-around;
+ line-height: 1.5;
+ padding: 2rem;
+
+
+ }
+    
+    .services-right {
+       display: flex;
+       flex-direction: column;
+       width: 60vw;
+
+       h2 {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-black;
+    }
+   .services-descriptions {
+    display: flex;
+    flex-flow: row;
+    gap: 2vw;
+
+    .services-description {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        height: 15rem;
+        justify-content: center;
+        background: $color-light;
+        padding-left: 2rem;
+        @include transition-ease;
+
+        h3 {
+            color: $color-dark;
+            font-weight: bold;
+
+          
+        }
+
+        &:hover a {
+            margin-left: 1rem;
+        }
+                      
+       &:hover  {
+            @include color;
+            @include transition-ease;
+        }
+       &:hover * {
+            color: $color-light;
+            @include transition-ease;
+           
+        }
+    }
+}
+}
+}
+@media screen and (max-width: 1024px){
+  
+section#services {
+justify-content: space-around;
+   margin: 8rem 1rem;
+@include media-md;
+   
+
+.services-left {
+display: none;
+
+ }
+    
+ .services-right {
+ width: 100vw;
+
+       
+   .services-descriptions {
+    display: flex;
+    flex-flow: row;
+    // gap: 2vw;
+
+    .services-description {
+        width: 30vw;
+        
+    }
+}
+}
+}
+}
+
+@media screen and (max-width : 680px){
+    section#services {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 2vw;
+       margin: 8rem 0rem;
+    @include media-sm;
+       
+    
+        .services-right {
+            width: 80vw;
+       .services-descriptions {
+        flex-flow: column;
+      
+    
+        .services-description {
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            height: 15rem;
+            background: $color-light;
+            padding-left: 2rem;
+            @include transition-ease;
+
+        }
+    }
+    }
+    }
+
+}
