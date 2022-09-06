@@ -17,6 +17,7 @@ html {
 }
 
 body {
+font-family: 'Poppins', sans-serif;
 font-weight: 300;
 color: $color-dark;
 line-height: 1.7;
@@ -35,7 +36,7 @@ position: relative;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
       padding: 2rem 5vw;
    
       &.scroll {
@@ -124,10 +125,7 @@ position: relative;
         justify-content: space-around;
         gap: 5vw;
 
-        // a:hover {
-        //      color: $color-primary;
         
-        // }
        
 
     }
@@ -147,7 +145,7 @@ position: relative;
     body {
            
     .navbar-container {
-
+        @include transition-ease;
    
       .menu-icon {
         display: flex;
@@ -164,80 +162,11 @@ position: relative;
       
 
         .download-cv {
-            // @include home-btn;
             padding: 0rem  0em;
             border: 0px solid $color-primary;
         }
 
     }
-
-            // .menu-icon {
-            //   display: flex;
-            //   flex-direction: column;
-            //       gap: 8px;
-            //       cursor: pointer;
-            //       @include transition-ease;
-
-            //  & span {
-            //     display: flex;
-            //     flex-direction: row;
-            //     background: $color-white;
-            //     height: 2px;
-            //     font-weight: 100;
-
-            //     &:nth-child(1) {
-            //         width: 2rem;
-            //     }
-
-            //     &:nth-child(2) {
-            //         width: 1.5rem;
-            //     }
-
-            //     &:nth-child(3) {
-            //         width: 1rem;
-            //     }
-            //  }
-          
-            //    }
-
-
-            //    .menu-icon.active {
-            //     display: flex;
-            //     flex-direction: column;
-            //         gap: 8px;
-            //         cursor: pointer;
-            //         @include transition-ease;
-  
-            //    & span {
-            //       display: flex;
-            //       flex-direction: row;
-            //       background: $color-white;
-            //       height: 2px;
-            //       font-weight: 100;
-  
-            //       &:nth-child(1) {
-            //           width: 2rem;
-            //           transform: rotate(225deg) translate(-.5rem, -.9rem);
-            //           @include transition-ease;
-
-            //       }
-  
-            //       &:nth-child(2) {
-            //           width: 0rem;
-            //       }
-  
-            //       &:nth-child(3) {
-            //           width: 3rem;
-            //           transform: rotate(135deg) translate(.5rem, .9rem);
-            //           @include transition-ease;
-
-            //       }
-            //    }
-            
-            //      }
-               
-           
-
 
 
         }
