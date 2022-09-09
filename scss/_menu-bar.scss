@@ -18,9 +18,10 @@
     top: 5rem;
     background: $color-primary;
     padding: 5rem 0;
+   
     width: 15rem;
     @include transition-ease;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;   
+    box-shadow: $color-primary 0px 50px 100px -20px,$color-black 0px 30px 60px -30px;   
     .btn {
         padding: 1rem 3rem;
     }
@@ -29,7 +30,7 @@
     display: flex;
     flex-direction: column;
    padding: 1rem 5rem;
-    animation: flipNavItem 20000s ease forwards;
+    animation: flipNavItem 200ms ease forwards;
     transform-origin: top;
     text-align: center;
     align-items: center;
@@ -41,7 +42,7 @@
         
       }
  & a {
-    color: $color-light;
+    color: $color-white;
 }
 &:hover a {
     color: $color-black;
@@ -94,15 +95,15 @@ opacity: 1;
                 font-weight: 100;
 
                 &:nth-child(1) {
-                    width: 2rem;
+                    width: 30px;
                 }
 
                 &:nth-child(2) {
-                    width: 1.5rem;
+                    width: 20px;
                 }
 
                 &:nth-child(3) {
-                    width: 1rem;
+                    width: 10px;
 
                    
                 }
@@ -113,17 +114,17 @@ opacity: 1;
                 & span {
                    
                     &:nth-child(1) {
-                        width: 2.5rem;
+                        width: 35px;
                     }
     
                     &:nth-child(2) {
-                        width: 2rem;
+                        width: 35px;
     
                     }
                     
     
                     &:nth-child(3) {
-                        width: 1.5rem;
+                        width: 35px;
     
                        
                     }

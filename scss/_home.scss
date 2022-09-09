@@ -207,6 +207,7 @@
           .get-in-touch {
             top: 2rem;
             position: relative;
+          
            
            }
         }
@@ -214,14 +215,20 @@
         &-right {
          display: flex; 
          flex-direction: column;
-         margin-top: 1rem;
+         margin-top: 5rem;
          height: 20rem;
 
          .home-images {
           align-items: flex-start;
          
              
+          #sulaimon-pics {
+            display: flex;
+           z-index: 3;
+           width: 100%;
+           height: 320px;
          
+          }
 
   
 .socials-media {
@@ -247,8 +254,8 @@
            .home-circle-bg {
         border-radius:   60vw 60vw 0 0;
         width:  120vw;
-        height:  60vw;
-       transform: translateX(-35%)
+        height:  20rem;
+       transform: translateX(-25%)
        }
         }
 

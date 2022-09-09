@@ -5,22 +5,39 @@
     width: 100vw;
     height: 100vh;
 }
-    
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    animation-name: animatebottom;
 
 
 
-
+@-webkit-keyframes animatebottom {
+    from {
+        bottom:-300px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
     @keyframes animatebottom {
         from {
-            bottom:-100px;
+            bottom:-300px;
             opacity: 0;
         }
+
         to {
             bottom: 0px;
             opacity: 1;
         }
         
     }
+}
     #myPage {
         display: none;
     }

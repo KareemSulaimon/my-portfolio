@@ -32,12 +32,14 @@ if( window.innerWidth < 1024) {
 
 
 // Loader Effect
-const loader = document.getElementById("loader")
-
 window.addEventListener('load', showPage)
- function showPage() {
+
+function showPage() {
+   setTimeout(showPages, 3000)
+}
+ function showPages() {
    document.getElementById("loader").style.display = "none";
-   document.getElementById("myPage").style.display =  "block"
+   document.getElementById("myPage").style.display = "block";
  }
  
 // change copyright years 
