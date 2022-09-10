@@ -41,7 +41,7 @@
 
              #sulaimon-pics {
               display: flex;
-             z-index: 3;
+             z-index: 2;
              width: 80%;
            
             }
@@ -222,11 +222,12 @@
           align-items: flex-start;
          
              
+         
           #sulaimon-pics {
             display: flex;
-           z-index: 3;
-           width: 100%;
-           height: 320px;
+           width: 50vw;
+           height: 38vh;
+        
          
           }
 
@@ -252,10 +253,12 @@
          }
 
            .home-circle-bg {
-        border-radius:   60vw 60vw 0 0;
-        width:  120vw;
-        height:  20rem;
-       transform: translateX(-25%)
+        border-radius:   40vh 40vh 0 0;
+        width:  80vh;
+        height:  40vh;
+       transform: translateX(-11.8rem);
+      
+       
        }
         }
 
@@ -264,16 +267,9 @@
  section#companies {
   
 .companies_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100vw;
   height: 5rem;
-  align-items: center;
-  background:  $color-light;
-  margin-top: 5rem
-  ;
-}
+  
+
  }
 
  //  ====================FOOTER================================

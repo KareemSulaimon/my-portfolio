@@ -45,3 +45,7 @@ function showPage() {
 // change copyright years 
 const year = document.querySelector('#current-year')
 year.innerHTML = new Date().getFullYear()
+
+if(window.innerWidth < 680){
+   document.getElementById('.home-container-right').appendChild(document.getElementById('companies'))
+}
