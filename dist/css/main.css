@@ -217,7 +217,6 @@ section#footer {
   }
   #home .home-container p {
     font-size: 1rem;
-    color: #0f0f1b;
   }
   #home .home-container-left {
     display: flex;
@@ -243,7 +242,8 @@ section#footer {
   #home .home-container-right .home-images #sulaimon-pics {
     display: flex;
     width: 100%;
-    height: 38vh;
+    height: 37vh;
+    z-index: 1;
   }
   #home .home-container-right .home-images .socials-media {
     display: flex;
@@ -262,15 +262,25 @@ section#footer {
     transition: all 0.5s ease-in-out;
   }
   #home .home-container-right .home-circle-bg {
-    border-radius: 40vh 40vh 0 0;
-    width: 80vh;
-    height: 40vh;
-    transform: translateX(-11.8rem);
+    display: grid;
+    position: absolute;
+    border-radius: 35vh 35vh 0 0;
+    width: 90vw;
+    height: 35vh;
+    right: 16px;
   }
   #home section#companies .companies_container {
     height: 5rem;
   }
-  #home section#footer {
+  #home section#companies section#footer {
+    display: flex;
+    justify-content: center;
+    background: #7562e0;
+    border-top: 1px solid #0f0f1b;
+    color: #f5f5f5;
+    padding: 20px 0;
+  }
+  section#footer {
     display: flex;
     justify-content: center;
     background: #7562e0;
@@ -279,20 +289,11 @@ section#footer {
     padding: 20px 0;
   }
 }
-section#footer {
-  display: flex;
-  justify-content: center;
-  background: #7562e0;
-  border-top: 1px solid #0f0f1b;
-  color: #f5f5f5;
-  padding: 20px 0;
-}
-
 section#services {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 2vw;
+  gap: 1vw;
   justify-content: center;
   margin: 8rem 0rem;
 }
@@ -410,7 +411,7 @@ section#services .services-right .services-descriptions .services-description:ho
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 2vw;
+    margin-bottom: 2vw;
     margin: 8rem 0rem;
   }
   section#services h1 {
@@ -426,7 +427,6 @@ section#services .services-right .services-descriptions .services-description:ho
   }
   section#services p {
     font-size: 1rem;
-    color: #0f0f1b;
   }
   section#services .services-right {
     width: 80vw;
@@ -437,6 +437,7 @@ section#services .services-right .services-descriptions .services-description:ho
   section#services .services-right .services-descriptions .services-description {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2vw;
     width: 80vw;
     height: 15rem;
     background: #f5f5f5;
@@ -568,7 +569,6 @@ section#portfolio .portfolio-btns .purple {
   }
   section#portfolio p {
     font-size: 1rem;
-    color: #0f0f1b;
   }
   section#portfolio .portfolio-intro {
     flex-direction: column;
@@ -654,10 +654,10 @@ section#contact .contact-section .contact_socials {
   list-style: none;
   margin-top: 2rem;
   align-self: flex-start;
-  gap: 5vw;
 }
 section#contact .contact-section .contact_socials li a {
   color: #fff;
+  margin-right: 5vw;
 }
 section#contact .contact-section .contact_socials li a:hover {
   color: #0f0f1b;
@@ -668,7 +668,6 @@ section#contact form {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 16px;
   margin-top: 4rem;
   text-align: start;
 }
@@ -677,11 +676,13 @@ section#contact form input {
   flex-direction: column;
   width: 40vw;
   height: 2rem;
+  margin-bottom: 16px;
   padding: 20px;
 }
 section#contact form textarea {
   display: flex;
   width: 40vw;
+  margin-bottom: 16px;
   height: 10rem;
   justify-content: center;
   padding: 20px;
@@ -715,6 +716,21 @@ section#contact button:hover {
     justify-content: space-around;
     align-items: center;
     padding: 5% 0;
+    color: #fff;
+  }
+  section#contact h1 {
+    color: #0f0f1b;
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  section#contact h2 {
+    font-size: 1.5rem;
+  }
+  section#contact h3 {
+    font-size: 1rem;
+  }
+  section#contact p {
+    font-size: 1rem;
   }
   section#contact .contact-section {
     display: flex;
@@ -736,7 +752,6 @@ section#contact button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
     margin-top: 4rem;
     text-align: start;
   }
@@ -771,7 +786,6 @@ section#contact button:hover {
     top: 5rem;
     background: #7562e0;
     padding: 5rem 0;
-    z-index: 99;
     width: 15rem;
     transition: all 0.5s ease-in-out;
     box-shadow: #7562e0 0px 50px 100px -20px, #0f0f1b 0px 30px 60px -30px;
@@ -824,7 +838,6 @@ section#contact button:hover {
   body .navbar-container .menu-icon {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
   }
@@ -834,6 +847,7 @@ section#contact button:hover {
     background: #fff;
     height: 2px;
     font-weight: 100;
+    margin-bottom: 8px;
   }
   body .navbar-container .menu-icon span:nth-child(1) {
     width: 30px;

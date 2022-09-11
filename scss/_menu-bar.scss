@@ -83,7 +83,6 @@ opacity: 1;
             .menu-icon {
               display: flex;
               flex-direction: column;
-                  gap: 8px;
                   cursor: pointer;
                   @include transition-ease;
 
@@ -93,6 +92,7 @@ opacity: 1;
                 background: $color-white;
                 height: 2px;
                 font-weight: 100;
+                margin-bottom: 8px;
 
                 &:nth-child(1) {
                     width: 30px;

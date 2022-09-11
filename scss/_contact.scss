@@ -25,10 +25,10 @@ section#contact {
             @include socials;
             margin-top: 2rem;
             align-self: flex-start;
-            gap: 5vw;
-
+           
             & li a {
                 color: $color-white;
+                margin-right: 5vw;
               
                 &:hover {
                   color: $color-black;
@@ -44,7 +44,6 @@ section#contact {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 16px;
         margin-top: 4rem;
         text-align: start;
        
@@ -55,12 +54,14 @@ section#contact {
             flex-direction: column;
             width: 40vw;
             height: 2rem;
+            margin-bottom: 16px;
             padding: 20px;
         }
 
         textarea {
             display: flex;
             width: 40vw;
+            margin-bottom: 16px;
             height: 10rem;
             justify-content: center;
           padding: 20px;
@@ -87,6 +88,8 @@ button {
       justify-content: space-around;
       align-items: center;
       padding: 5% 0;
+      @include media-sm;
+      color: $color-white;
     
     
         .contact-section {
@@ -112,7 +115,6 @@ button {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 1rem;
             margin-top: 4rem;
             text-align: start;
            

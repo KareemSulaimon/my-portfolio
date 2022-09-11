@@ -2,7 +2,7 @@ section#services {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 2vw;
+    gap: 1vw;
     justify-content: center;
    margin: 8rem 0rem;
 @include media-xl;
@@ -93,7 +93,7 @@ display: none;
    .services-descriptions {
     display: flex;
     flex-flow: row;
-    // gap: 2vw;
+   
 
     .services-description {
         width: 30vw;
@@ -110,7 +110,7 @@ display: none;
         flex-direction: column;
         width: 100%;
         align-items: center;
-        gap: 2vw;
+        margin-bottom: 2vw;
        margin: 8rem 0rem;
     @include media-sm;
        
@@ -124,6 +124,7 @@ display: none;
         .services-description {
             display: flex;
             flex-direction: column;
+            margin-bottom: 2vw;
             width: 80vw;
             height: 15rem;
             background: $color-light;
