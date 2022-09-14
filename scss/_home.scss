@@ -191,6 +191,7 @@
   .home-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         @include media-sm; 
         margin-top: 10rem;
@@ -219,18 +220,20 @@
          height: 20rem;
 
          .home-images {
-          align-items: flex-start;
-         
-             
-         
+          align-items: center;
+          justify-content: space-between;
+            // gap: 5rem;
+
+
           
           #sulaimon-pics {
             display: flex;
-            // width: 50vw;
-            height: 49vh;
+            width: 60vw;
+            height: 65vw;
            z-index: 1;
+           margin-right: 3rem;
           }
-  
+          
 .socials-media {
               display: flex;
               flex-direction: column;
@@ -240,10 +243,10 @@
               @include socials;
               
               & li a {
-                color: $color-white;
+                color: $color-black;
               
                 &:hover {
-                  color: $color-black;
+                  color: $color-primary;
                   @include transition-ease;
                 }
         }
@@ -251,15 +254,19 @@
              }
          }
 
-         .home-circle-bg {
-          display: grid;
-          position: absolute;
-          border-radius: 45vh 45vh 0 0 ;
-          width: 90vw;
-          height: 45vh; 
-          right: 3px;
-      
-       }
+    //   
+    .home-circle-bg {
+      display: flex;
+      position: absolute;
+      border-radius: 100%;
+      width: 65vw;
+      height: 65vw; 
+    //  transform: translate(-10%,15%);
+    left: 10vw;
+     background: $color-primary;
+     z-index: -1;
+   }
+
         }
 
       }
@@ -268,6 +275,7 @@
   
 .companies_container {
   height: 5rem;
+  z-index: 2;
   
 
  }
@@ -300,36 +308,3 @@ padding: 20px 0;
 
 }
 
-@media screen and (max-width:500px){
-  #home {
-    .home-container { 
-    .home-images {
-     align-items: flex-start;
-
-     
-     #sulaimon-pics {
-       display: flex;
-       width: 80vw;
-       height: 49vh;
-      z-index: 1;
-     }
-
-.socials-media {
-         display: none;
-      
-        }
-    
-      }
-      .home-circle-bg {
-        display: grid;
-  
-        border-radius: 40vh 40vh 0 0 ;
-        width: 80vw;
-        height: 45vh; 
-        right: 18px;
-    
-     }
-
-}
-  }
-}
